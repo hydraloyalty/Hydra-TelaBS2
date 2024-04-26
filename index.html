@@ -5,14 +5,185 @@
     <meta charset="utf-8">
     <title>Tela de Aprovação</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="favicon.png">
 </head>
 
 <body>
     <div class="tela">
         <div class="tela-aprov">
-        
+            <div class="header">
+                <img src="Recursos/LOGO.svg" style="height: 50px; margin-left: 744px;" alt="Logo do Banco">
+                <div class="header-content">
+                    <div class="banco-dados">
+                        <div class="banco-nome">BANCO BS2 S.A.</div>
+                        <div class="banco-cnpj">CNPJ: 71.027.866/0003-04</div>
+                    </div>
+                    <div class="banco-div"></div>
+                    <div class="banco-sair">SAIR</div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-bg"></div>
+                <div class="menu-nav">
+                    <div class="page-not">
+                        <img src="Recursos/home.svg" alt="Home" style="height: 24px">
+                        <div>Home</div>
+                    </div>
+                    <div class="page-not">
+                        <img src="Recursos/pageview.svg" alt="Consulta" style="height: 24px">
+                        <div>Consulta</div>
+                    </div>
+                    <div class="page-not">
+                        <img src="Recursos/assignment.svg" alt="Cadastros" style="height: 24px">
+                        <div>Cadastros</div>
+                    </div>
+                    <div class="page-select">
+                        <img src="Recursos/savings.svg" alt="Crédito Empresarial" style="height: 24px">
+                        <div>Crédito Empresarial</div>
+                    </div>
+                    <div class="page-not">
+                        <img src="Recursos/priority.svg" alt="Aprovações" style="height: 24px">
+                        <div>Aprovações</div>
+                    </div>
+                    <div class="page-not">
+                        <img src="Recursos/universal_currency_alt.svg" alt="Pagamentos" style="height: 24px">
+                        <div>Pagamentos</div>
+                    </div>
+                    <div class="page-not">
+                        <img src="Recursos/finance.svg" alt="Investimentos" style="height: 24px">
+                        <div>Investimentos</div>
+                    </div>
+                    <div class="page-not">
+                        <img src="Recursos/settings.svg" alt="Configurações" style="height: 24px">
+                        <div>Configurações</div>
+                    </div>
+                </div>
+            </div>
+            <div class="secoes">
+                <div class="secao">
+                    <div class="secao-titulo">Cadastro</div>
+                    <div class="secao-div"></div>
+                    
+                    <div class="input-titulo">CNPJ</div>
+                    <input id="input-cnpj" type="text" placeholder="00.000.000/0001-00" class="input-dados">
+                    
+                    <div class="input-titulo">Razão Social</div>
+                    <input id="input-rs" type="text" placeholder="Insira aqui a RAZÃO SOCIAL" class="input-dados">
+                    
+                    <div class="input-titulo">Data de Abertura</div>
+                    <input id="input-data" type="text" placeholder="00/00/0000" class="input-dados">
+                    
+                    <div class="input-titulo">Protocolo de Atendimento</div>
+                    <input id="input-protocolo" type="text" placeholder="Insira aqui o PROTOCOLO" class="input-dados">
+                    
+                    <div class="botoes">
+                        <img src="Recursos/edit.svg" alt="Editar" style="height: 24px;"> Atualizar Cadastro
+                    </div>
+                </div>
+                <div class="secao-dupla">
+                    <div class="secao">
+                        <div class="secao-titulo">Proposta de Crédito</div>
+                        <div class="secao-div"></div>
+                    
+                        <div class="input-duplo">
+                            <div class="lados">
+                                <div class="input-titulo">Valor do Crédito</div>
+                                <div class="valor">
+                                    R$ <input id="input-valor" type="text" placeholder="1.000,00" class="input-valor">
+                                </div>
+                            </div>
+                            <div class="lados">
+                                <div class="input-titulo">Parcelas</div>
+                                <input type="text" id="input-parcelas" class="input-dados" placeholder="Insira aqui a PARCELA">
+                            </div>
+                        </div>
+                    
+                        <div class="input-titulo">Prazo para pagamento</div>
+                        <div class="input-dados">Após processamento de informações</div>
+                    
+                        <div class="input-titulo">Código da Proposta</div>
+                        <input id="input-codigo" type="text" placeholder="Recarregue a página (gerador aleatório automático)" class="input-dados">
+                    </div>
+                    <div class="secao" id="dados-bancarios">
+                        <div class="secao-titulo">Dados Bancários</div>
+                        <div class="secao-div"></div>
+                        
+                        <div class="input-titulo">Instituição</div>
+                        <input id="input-banco" type="text" placeholder="Banco" class="input-dados">
+                        
+                        <div class="input-duplo">
+                            <div class="lados">
+                                <div class="input-titulo">Agência</div>
+                                <input id="input-agencia" type="text" placeholder="0000" class="input-dados">
+                            </div>
+                            <div class="lados">
+                                <div class="input-titulo">Conta</div>
+                                <input id="input-conta" type="text" placeholder="0000000-0" class="input-dados">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="secao">
+                    <div class="secao-titulo">Status da Aprovação</div>
+                    <div class="secao-div"></div>
+                    
+                    <div class="input-duplo">
+                        <div class="lados">
+                            <div class="input-titulo">Resultado da Análise</div>
+                            <div class="status">
+                                <img src="Recursos/check_circle.svg" alt="Aprovado" style="width: 24px;">
+                                <div class="status-aprovado">Aprovada</div>
+                            </div>
+                        </div>
+                        <div class="lados">
+                            <div class="input-titulo">Processamento</div>
+                            <div class="status">
+                                <img src="Recursos/warning.svg" alt="Aviso" style="width: 24px;">
+                                <div class="status-pendente">Pendente</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="input-titulo">Pendência</div>
+                    <input id="input-pendencia" type="text" placeholder="Informe aqui" class="input-dados">
+                        
+                    <div class="botoes">
+                        <img src="Recursos/upload_file.svg" alt="Editar" style="height: 24px;"> Anexar
+                    </div>
+                </div>
+            </div>
+            <div class="final"></div>
+        </div>
+        <div class="config" class="ocultar-na-impressao">
+            <div class="config-container">
+                <div class="config-titulo">Parcelas</div>
+                <select id="parcelas" class="input-select">
+                    <option value="12x" selected="">12x</option>
+                    <option value="24x">24x</option>
+                    <option value="36x">36x</option>
+                    <option value="48x">48x</option>
+                    <option value="60x">60x</option>
+                    <option value="72x">72x</option>
+                    <option value="84x">84x</option>
+                    <option value="96x">96x</option>
+                    <option value="108x">108x</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+            <div class="config-container">
+                <div class="config-titulo">Exibir "Dados Bancários"</div>
+                <div class="segmented-control">
+                    <input type="radio" id="sim" name="documento" value="sim">
+                    <label for="sim">SIM</label>
+                    <input type="radio" id="nao" name="documento" value="nao" checked>
+                    <label for="nao">NÃO</label>
+                </div>
+            </div>
+            
+            <button id="botao-imprimir">EXPORTAR</button>
         </div>
     </div>
+    <script src="scripts.js"></script>
 </body>
     
 </html>

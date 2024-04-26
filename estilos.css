@@ -4,10 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .tela {
-    display: flex;
+    display: inline-flex;
     align-items: start;
     width: 100%;
-    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
 }
 
 .tela-aprov {
@@ -15,4 +18,386 @@
     flex-direction: column;
     align-items: center;
     width: 1576px;
+    background-color: #F3F4F6;
+    height: 860px;
+}
+
+.final {
+    width: 100%;
+    height: 10px;
+    background-color: #1226AA;
+}
+
+.header {
+    display: inline-flex;
+    align-items: center;
+    width: 1576px;
+    height: 112px;
+    background-color: #1226AA;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.banco-dados {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    color: white;
+    gap: 3px;
+}
+
+.banco-nome {
+    font-weight: 400;
+    font-size: 12px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.banco-cnpj {
+    font-weight: 600;
+    font-size: 14px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.banco-div {
+    width: 1px;
+    height: 70px;
+    background: white;
+    margin-left: 36px;
+    margin-right: 21px;
+}
+
+.banco-sair {
+    color: white;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 1576px;
+    justify-content: center;
+}
+
+.menu-bg {
+    background-color: #1226AA;
+    height: 35px;
+}
+
+.menu-nav {
+    display: inline-flex;
+    
+    margin-top: -35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    height: 100px;
+    
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10)
+}
+
+.page-not {
+    display: flex;
+    flex-direction: column;
+    width: 192px;
+    align-content: center;
+    justify-content: center;
+    gap: 7px;
+    color: #6B7280;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 20px;
+}
+
+.page-select {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+    width: 192px;
+    gap: 7px;
+    padding-top: 28px;
+    padding-bottom: 20px;
+    
+    border-radius: 8px;
+    background-color: #F3F4F6;
+    
+    color: #1226AA;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+.secoes {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 14px;
+    gap: 20px;
+    height: 100%;
+}
+
+.secao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 458px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+}
+
+.secao-titulo {
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+    color: black;
+    margin-bottom: 7px;
+}
+
+.secao-div {
+    width: 458px;
+    height: 1px;
+    background: #E5E7EB;
+}
+
+.input-titulo {
+    color: #6B7280;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.input-dados {
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #E5E7EB;
+    
+    padding: 8px 14px;
+    min-width: 187px;
+    
+    width: 100%;
+    box-sizing: border-box;
+    
+    font-weight: 500;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #1A1A1A;
+
+    overflow: hidden; /* esconde qualquer conteúdo que ultrapasse a largura */
+    white-space: nowrap; /* faz com que o texto não quebre para a próxima linha */
+    text-overflow: ellipsis; /* adiciona "..." para indicar que o texto foi truncado */
+}
+
+.botoes {
+    display: inline-flex;
+    align-items: center;
+    
+    background-color: #1226AA;
+    border-radius: 8px;
+    
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 15px;
+    gap: 7px;
+    margin-top: 20px;
+    
+    color: white;
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    letter-spacing: 0.12px;
+    white-space: nowrap;
+}
+
+.input-duplo {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.valor {
+    display: inline-flex;
+    align-items: center;
+    min-width: 168px;
+    
+    gap: 5px;
+    padding: 7px 14px;
+    
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #E5E7EB;
+    
+    font-weight: 500;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #1A1A1A;
+    
+    white-space: nowrap; /* faz com que o texto não quebre para a próxima linha */
+}
+
+.input-valor {
+    width: 160px;
+    
+    border: 0px solid #E5E7EB;
+    
+    font-weight: 500;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #1A1A1A;
+    
+    overflow: hidden; /* esconde qualquer conteúdo que ultrapasse a largura */
+    white-space: nowrap; /* faz com que o texto não quebre para a próxima linha */
+}
+
+.lados {
+    display: block;
+    width: 219px;
+}
+
+.secao-dupla {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    width: 187px;
+    
+    gap: 10px;
+    padding: 6px 14px;
+    
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #E5E7EB;
+    
+    font-weight: 500;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    
+    white-space: nowrap; /* faz com que o texto não quebre para a próxima linha */
+}
+
+.status-aprovado {
+    color: #0F9D58;
+}
+
+.config {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 260px;
+    border-left: solid 1px;
+    border-color: #808080;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+#botao-imprimir {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Padding */
+    margin: 10px 0; /* Margem */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor como ponteiro */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+.ocultar-na-impressao {
+    display: none !important;
+}
+
+.config-container {
+    padding: 18px;
+    border: 1px solid #888888;
+    border-radius: 10px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.config-titulo {
+    font-family: 'Poppins';
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-weight: 600;
+}
+
+.input-select {
+    height: 50px;
+    
+    background-color: #E8DEF8;
+    border-radius: 6px;
+    border: 1px solid #79747E;
+    
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #333;
+    
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 10px;
+}
+
+.segmented-control {
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #79747E;
+    max-width: 300px; /* Ajuste a largura máxima conforme necessário */
+    height: 40px;
+    align-content: center;
+}
+
+.segmented-control label {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #1D1B20;
+    align-items: center;
+    justify-content: center;
+}
+
+.segmented-control input[type="radio"] {
+    display: none;
+}
+
+.segmented-control input[type="radio"]:checked + label {
+    background-color: #E8DEF8;
+    color: #1D192B;
+    font-weight: 600;
 }
